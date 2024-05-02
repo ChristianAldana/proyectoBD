@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <h2>Agregar Doctor</h2>
+        <form>
+            <div class="form-group">
+                <label for="doctor-id">Doctor ID:</label>
+                <input type="text" class="form-control" id="doctor-id">
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="form-group">
+                <label for="especialidad">Especialidad:</label>
+                <input type="text" class="form-control" id="especialidad">
+            </div>
+            <button type="submit" class="btn btn-success">Agregar</button>
+            <a href="{% url 'datosDoctor' %}" class="btn btn-primary">Volver al Inicio</a>
+        </form>
+    </div>
+{% endblock %}

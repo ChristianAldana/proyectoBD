@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="container">
+        <h2>Eliminar Paciente</h2>
+        <!-- Contenido del formulario o de la página -->
+        <form>
+            <div class="form-group">
+                <label for="paciente-id">DPI del Paciente a Eliminar:</label>
+                <input type="text" class="form-control" id="paciente-id" placeholder="Ingrese el DPI del paciente">
+            </div>
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form>
+        <!-- Botón para volver al índice principal -->
+        <a href="{% url 'home' %}" class="btn btn-primary mt-3">Volver al Inicio</a>
+    </div>
+
+{% endblock %}
