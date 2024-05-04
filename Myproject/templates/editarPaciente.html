@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <h2>Editar Paciente</h2>
+        <!-- Contenido del formulario -->
+        <form>
+            <div class="form-group">
+                <label for="paciente-dpi">DPI:</label>
+                <input type="text" class="form-control" id="paciente-dpi" placeholder="Ingrese el DPI del paciente">
+            </div>
+            <div class="form-group">
+                <label for="paciente-nombre">Nombre:</label>
+                <input type="text" class="form-control" id="paciente-nombre" placeholder="Ingrese el nombre del paciente">
+            </div>
+            <div class="form-group">
+                <label for="paciente-edad">Edad:</label>
+                <input type="text" class="form-control" id="paciente-edad" placeholder="Ingrese la edad del paciente">
+            </div>
+            <div class="form-group">
+                <label for="paciente-genero">Género:</label>
+                <select class="form-control" id="paciente-genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="paciente-estado">Estado:</label>
+                <input type="text" class="form-control" id="paciente-estado" placeholder="Ingrese el estado del paciente">
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        </form>
+        <!-- Botón para volver al índice principal -->
+        <a href="{% url 'home' %}" class="btn btn-secondary mt-3">Volver al Inicio</a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="content container">
+    <!-- Pre Loader -->
+    <div class="loading">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!--/Pre Loader -->
+
+    <div class="wrapper">
+    <!-- Page Content -->
+    <div id="content">
+    <!-- Top Navigation -->
+    <div class="container top-brand">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <span title="Fullscreen" class="ti-fullscreen fullscreen"></span>
+                    </a>
+
+
+    </div>
+    <div class="row">
+    <!-- Widget Item -->
+    <div class="col-md-12">
+    <div class="widget-area-2 proclinic-box-shadow">
+    <h3 class="widget-title">PACIENTES</h3>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>DPI</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Genero</th>
+            <th>Estado</th>
+
+        </tr>
+        </thead>
+    </table>
+    <tbody>
+    <div class="text-center">
+        <a href="{% url 'agregarPaciente' %}" class="btn btn-success">AGREGAR</a>
+        <a href="{% url 'editarPaciente' %}" class="btn btn-warning">EDITAR</a>
+        <a href="{% url 'eliminarPaciente' %}" class="btn btn-danger">ELIMINAR</a>
+    </div>
+
+
+
+{% endblock %}
+

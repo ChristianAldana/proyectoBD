@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <h2>Eliminar Doctor</h2>
+        <!-- Contenido del formulario o de la página -->
+        <form>
+            <div class="form-group">
+                <label for="doctor-id">ID del Doctor a Eliminar:</label>
+                <input type="text" class="form-control" id="doctor-id" placeholder="Ingrese el ID del doctor">
+            </div>
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form>
+        <!-- Botón para volver al índice principal -->
+        <a href="{% url 'datosDoctor' %}" class="btn btn-primary mt-3">Volver al Inicio</a>
+    </div>
+{% endblock %}
